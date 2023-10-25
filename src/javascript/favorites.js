@@ -72,7 +72,7 @@ function populateFavorites() {
 
     if (para.textContent === "") {
       para.textContent =
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit...";
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea vero necessitatibus beatae fugiat autem quaerat ad cum! Saepe, inventore necessitatibus cumque officiis possimus dolore nostrum, earum quasi provident laudantium aut?";
     }
     card.appendChild(description);
 
@@ -223,7 +223,7 @@ function fetchResults(apiUrlForSearch) {
 
           if (para.textContent === "") {
             para.textContent =
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit...";
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea vero necessitatibus beatae fugiat autem quaerat ad cum! Saepe, inventore necessitatibus cumque officiis possimus dolore nostrum, earum quasi provident laudantium aut?";
           }
           card.appendChild(description);
 
