@@ -1,4 +1,3 @@
-```markdown
 # Superhero Hunter App
 
 The Superhero Hunter App is a web application built using vanilla JavaScript, HTML, and CSS. It allows users to search for their favorite superheroes, view detailed information about them, and add them to their list of favorite superheroes.
@@ -47,7 +46,6 @@ The project contains the following files and directories:
 
 ```bash
 git clone https://github.com/gautamuniverse/marvel-superhero-hunter.github.io
-```
 
 2. Open the `index.html` file in your web browser to access the home page.
 
