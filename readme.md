@@ -1,8 +1,6 @@
 ```markdown
 # Superhero Hunter App
 
-![Superhero Hunter App](appScreenShot.png)
-
 The Superhero Hunter App is a web application built using vanilla JavaScript, HTML, and CSS. It allows users to search for their favorite superheroes, view detailed information about them, and add them to their list of favorite superheroes.
 
 ## Features
