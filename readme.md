@@ -40,12 +40,14 @@ The project contains the following files and directories:
 - `*.js`: The JavaScript file containing the application logic. Each .html file has its own java script file. They are present under javascript/ directory.
 - `images/`: A directory for storing images.
 
+## Live Website
+
+- https://gautamuniverse.github.io/marvel-superhero-hunter.github.io/
+
 ## How to Use
 
 1. Clone this repository to your local machine:
-
-```bash
-git clone https://github.com/gautamuniverse/marvel-superhero-hunter.github.io
+bash git clone https://github.com/gautamuniverse/marvel-superhero-hunter.github.io
 
 2. Open the `index.html` file in your web browser to access the home page.
 
