@@ -127,6 +127,25 @@
     </main>
     <!-- End Main Content -->
 
+    <!-- -----Bread Crumb------ -->
+    <div class="breadcrumb">
+      <span class="icon"><i class="fa-solid fa-bars fa-lg"></i></span>
+      <div class="dropdown-list">
+        <ul>
+          <li><div id="search-crumb">
+            <form onsubmit="fetchSearchField(event)">
+              <input id="search-field-crumb" type="text" placeholder="Search Marvel Characters" />
+              <button id="search-button-crumb">
+                <i class= "fa fa-search" data-bs-toggle="modal" data-bs-target="#searchModal"></i>
+              </button>
+            </form>
+          </div></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./favorites.html">Favorites</a></li>
+        </ul>
+      </div>
+    </div>
+
     <!-- Aside (Sidebar) -->
     <aside class="m5">
       <a href="./favorites.html" id="favorites-headline">

@@ -255,6 +255,12 @@ aside ol li {
     color: rgb(255, 0, 0);
 }
 
+
+/* BreadCrumb Styles */
+.breadcrumb{
+    display: none;
+}
+
 /* Footer Styles */
 /* Footer section at the bottom of the page */
 footer {
@@ -401,16 +407,100 @@ footer {
     }
 }
 
+/* Media Query for Screens with a Maximum Width of 516px */
 @media screen and (max-width: 516px) {
+    /* Breadcrumb Styles */
+    .breadcrumb {
+      display: block;
+      color: white;
+      cursor: pointer;
+      position: absolute;
+      top: 17px;
+      right: 20px;
+      transition: all 0.5s ease;
+    }
+  
+    .breadcrumb:hover {
+      color: rgb(255, 0, 0);
+    }
+  
+    /* Dropdown List Styles */
+    .breadcrumb .dropdown-list {
+      display: none;
+      position: absolute;
+      right: 10px;
+      background-color: #565869;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      top: 100%;
+      width: max-content;
+    }
+  
+    .breadcrumb:hover .dropdown-list {
+      display: block;
+    }
+  
+    .dropdown-list ul {
+      list-style: none;
+      color: white;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      caret-color: auto;
+    }
+  
+    .dropdown-list li {
+      padding: 5px;
+      transition: all 0.5s ease;
+    }
+  
+    .dropdown-list li a {
+      text-decoration: none;
+      color: white;
+    }
+  
+    .dropdown-list li a:hover {
+      color: rgb(255, 0, 0);
+      padding: 5px;
+    }
+  
+    /* FontAwesome Icon Styles */
+    .icon {
+      font-size: 20px;
+      margin-right: 5px;
+    }
+  
+    /* Search Button Styles */
+    #search-button-crumb {
+      background-color: transparent;
+      color: white;
+      border-style: none;
+      cursor: pointer;
+      transition: all 0.5s ease;
+    }
+
+    #search-button-crumb:hover{
+        color: rgb(255, 0, 0);
+    }
+  
+    /* Hide Pagination, Search Field, and Search Button */
     #pagination {
-        display: none;
+      display: none;
     }
-
+  
     #search-field {
-        display: none;
+      display: none;
     }
-
+  
+    #search-button {
+      visibility: hidden;
+    }
+  
+    /* Logo Image Styles */
     #logo img {
-        left: 70px;
+      left: 70px;
     }
-}
+  }
+  
