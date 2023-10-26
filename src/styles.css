@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: #343541;
     overflow: hidden;
+    caret-color: transparent;
 }
 
 /* Main application container */
@@ -61,6 +62,7 @@ header {
     width: 180px;
     height: 22px;
     color: white;
+    caret-color: auto;
 }
 
 /* Search input field placeholder styling */
