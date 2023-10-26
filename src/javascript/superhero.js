@@ -41,13 +41,7 @@ if (superheroName) {
        //Add SuperHero Image
        const img1 = hero.thumbnail.path + "/landscape_incredible" +".jpg";
        console.log(hero.thumbnail.path);
-       console.log("Img:"+img1);
-       if(img1 !== ''){
-         superheroImage.children[0].src=img1;
-       }
-       else
-       superheroImage.children[0].src="src/images/default_image_superhero.png";
-      //  console.log("Src: "+superheroImage.src);
+      superheroImage.children[0].src=img1;
 
       // Add Superhero Description
       description.textContent = hero.description;
