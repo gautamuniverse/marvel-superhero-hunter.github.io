@@ -6,8 +6,8 @@ let storedList = localStorage.getItem("favList");
 let favList = storedList ? JSON.parse(storedList) : [];
 
 // ----API Keys-----
-let publicKey = "0c9cef7f06e35dda7b9b2b06249f18b4";
-let privateKey = "d68d5ade3258d9c2a8c5934c4590023f45b65d04";
+let publicKey = ${{ secrets.MARVEL_PUBLIC_KEY }};
+let privateKey = ${{ secrets.MARVEL_PRIVATE_KEY }};
 
 // -----Generate Hash Key------
 let baseURL = "https://gateway.marvel.com/v1/public/characters";
