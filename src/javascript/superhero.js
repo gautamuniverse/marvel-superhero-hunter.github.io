@@ -30,12 +30,24 @@ if (superheroName) {
   const storiesElement = document.getElementById("stories");
   const seriesElement = document.getElementById("series");
   const eventsElement = document.getElementById("events");
+  const superheroImage = document.getElementById("superheroImage");
 
   fetch(`${apiUrl}`)
     .then((response) => response.json())
     .then((data) => {
       let hero = data.data.results[0];
       // Display superhero details
+
+       //Add SuperHero Image
+       const img1 = hero.thumbnail.path + "/landscape_incredible" +".jpg";
+       console.log(hero.thumbnail.path);
+       console.log("Img:"+img1);
+       if(img1 !== ''){
+         superheroImage.children[0].src=img1;
+       }
+       else
+       superheroImage.children[0].src="src/images/default_image_superhero.png";
+      //  console.log("Src: "+superheroImage.src);
 
       // Add Superhero Description
       description.textContent = hero.description;
@@ -71,6 +83,11 @@ if (superheroName) {
         listItem.textContent = ele.name;
         eventsElement.children[1].appendChild(listItem);
 
+       
+
+        
+        // const imageTag = document.createElement('img');
+        // imageTag.src=img;
         updateFavoritesList();
       });
       // Create Favorite Button

@@ -194,6 +194,7 @@ main::-webkit-scrollbar {
 #superheroImage {
     width: 100%;
     text-align: center;
+    margin-top: 20px;
 }
 
 /* Superhero image size */
