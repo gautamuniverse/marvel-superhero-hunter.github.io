@@ -222,6 +222,25 @@ function fetchSearchField(event) {
   }
 }
 
+//------Search Results for the Mobile Crumb Menu----
+function fetchSearchFieldCrumb(event) {
+  event.preventDefault();
+  searchFieldValue = document.getElementById("search-field-crumb").value;
+
+  let searchQueryParams = constructQueryParams(searchFieldValue);
+  let apiUrlForSearch = `${baseURL}?${searchQueryParams}`;
+
+  if (searchFieldValue !== "") {
+    fetchResults(apiUrlForSearch);
+  } else {
+    modalBody.innerHTML = "";
+    let para = document.createElement("p");
+    para.textContent =
+      "Search field is empty, please type something and try again!";
+    modalBody.appendChild(para);
+  }
+}
+
 //Fetch search term specific characters from the API and display on Modal
 function fetchResults(apiUrlForSearch) {
   modalBody.innerHTML = "";
